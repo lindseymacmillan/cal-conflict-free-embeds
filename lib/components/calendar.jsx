@@ -267,7 +267,7 @@ const Calendar = () => {
                             console.log('newSlot', newSlot);
                             setSlot(newSlot);
                         };
-                        return <button className={classes.timeSlot} onClick={() => handleClick()} disabled={!available}>{label}</button>
+                        return <button key={slot} className={classes.timeSlot} onClick={() => handleClick()} disabled={!available}>{label}</button>
                     })}
                 </div>
             </div>
