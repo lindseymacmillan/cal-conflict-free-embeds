@@ -8,6 +8,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
+  define: {
+    'process.env': {}
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/main.jsx'),
